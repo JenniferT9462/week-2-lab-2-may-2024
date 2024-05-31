@@ -2,8 +2,47 @@ html {
   height: 100%;
   width: 100%;
 }
-
+body {
+  color: rgb(13, 110, 5);
+}
+main {
+  border: solid 2px;
+  padding: 10px;
+  margin-top: 10px;
+}
 footer {
   text-align: center;
   font-size: x-small;
+}
+nav {
+	display: flex;
+	justify-content: space-around;
+} 
+nav a {
+	text-decoration: none;
+	padding: 14px 16px;
+	font-size: 20px;
+	border: solid 2px rgb(16, 190, 54);
+	border-radius: 20px;
+} 
+a {
+  background-color: rgb(13, 110, 5);
+  color: rgb(85, 217, 85);
+}
+nav a:hover {
+	background-color: rgb(79, 165, 75);
+	color: rgb(28, 95, 13);
+}
+
+nav a.active {
+	background-color: rgb(25, 78, 22);
+	color: rgb(85, 217, 85);
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.links {
+  background-color: white;
 }
