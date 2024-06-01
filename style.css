@@ -4,6 +4,7 @@ html {
 }
 body {
   color: rgb(13, 110, 5);
+  background-color: beige;
 }
 main {
   border: solid 2px;
