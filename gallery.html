@@ -1,61 +1,104 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>gallery</title>
+    <link href="gallery.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>gallery</title>
-  <link href="gallery.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="schedule.html">Schedule</a>
+    </nav>
 
-<body>
+    <h1 style="text-align: center">Gallery</h1>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="gallery.html" class="active">Gallery</a>
-    <a href="about.html">About</a>
-    <a href="schedule.html">Schedule</a>
-  </nav>
+    <main>
+      <h2>Work in Progress (WIP)</h2>
 
+      <div class="gallery">
+        <img src="img/knitting3.jpg" alt="Picture of teal yarn" width="400" />
+        <div class="descrip">Garter Stitch</div>
+      </div>
 
-  <h1 style="text-align: center;">Gallery</h1>
+      <div class="gallery">
+        <img
+          src="img/knitting5.jpg"
+          alt="Picture of rainbow yarn"
+          width="400"
+        />
+        <div class="descrip">Rainbow Yarn</div>
+      </div>
 
-  <main>
-    <h2>Work in Progress (WIP)</h2>
+      <div class="gallery">
+        <img
+          src="img/knitting4.jpg"
+          alt="Picture of multi-colored teal yarn"
+          width="400"
+        />
+        <div class="descrip">Garter Stitch</div>
+      </div>
 
-    <div class="gallery">
-      <img src="img/knitting3.jpg" alt="Picture of teal yarn" width="400">
-      <div class="descrip">Garter Stitch</div>
-    </div>
+      <div class="gallery">
+        <img
+          src="img/knitting6.jpg"
+          alt="Picture of brown knitted hat"
+          width="400"
+        />
+        <div class="descrip">Fall Hat</div>
+      </div>
+    </main>
 
-    <div class="gallery">
-      <img src="img/knitting5.jpg" alt="Picture of rainbow yarn" width="400">
-      <div class="descrip">Rainbow Yarn</div>
-    </div>
+    <h2>Let's Edit Some Images!!</h2>
+    <p>Type some numbers in the boxes press enter or submit...To see <strong>Blur</strong> better try over 100.</p>
 
-    <div class="gallery">
-      <img src="img/knitting4.jpg" alt="Picture of multi-colored teal yarn" width="400">
-      <div class="descrip">Garter Stitch</div>
-    </div>
+    <form>
+      <label>
+        Contrast:
+        <input name="c1">
+      </label>
+      
+      <label>
+        Blur:
+        <input name="b1">
+      </label>
+      
+      <label>
+        Sepia:
+        <input name="s1">
+      </label>
+       <input type="submit">
+    </form>
+    <br>
 
-    <div class="gallery">
-      <img src="img/knitting6.jpg" alt="Picture of brown knitted hat" width="400">
-      <div class="descrip">Fall Hat</div>
-    </div>
-  </main>
+    <script>
+      let params = new URLSearchParams(document.location.search);
+      let width1, blur1, sepia1;
+      con1 = params.get("c1");
+      blur1 = params.get("b1");
+      sepia1 = params.get("s1");
 
+      document.write(`<img src='https://images.pexels.com/photos/635002/pexels-photo-635002.jpeg?con=${con1}&blur=${blur1}&sepia=${sepia1}' width="400">`);
+      document.write("<br>");
+      document.write(`<img src='https://images.pexels.com/photos/160438/ankle-socks-children-socks-knitted-greeting-160438.jpeg?con=${con1}&blur=${blur1}&sepia=${sepia1}' width="400">`);
+      document.write("<br>")
+    </script>
 
-
-
-
-
-
-
-
-  <script src="script.js"></script>
-  <footer>
-    <p style="text-align:center; background-color: rgb(13, 110, 5); color: white;">Created at CodeX &copy;</p>
-  </footer>
-</body>
-
+    <script src="script.js"></script>
+    <footer>
+      <p
+        style="
+          text-align: center;
+          background-color: rgb(13, 110, 5);
+          color: white;
+        "
+      >
+        Created at CodeX &copy;
+      </p>
+    </footer>
+  </body>
 </html>
