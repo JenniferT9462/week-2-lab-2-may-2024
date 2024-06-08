@@ -20,7 +20,9 @@
     <img src="img/knitting1.jpg" height="360" width="720" />
 
     <main>
+    <!-- Lists in containers to add flex property to better position elements -->
       <div class="list-container">
+        <!-- List one is a list of links to helpful knitting websites -->
         <div class="list1">
         <ul>
           <h4 class="listHeading2">Links for Knitting Help</h4>
@@ -72,6 +74,7 @@
           </li>
         </ul>
       </div>
+      <!-- List two is a ordered list -->
       <div class="list2">
         <ol>
           <h4 class="listHeading1">Top 5 Easy Projects to Knit</h4>
@@ -86,14 +89,32 @@
     </main>
 
     <script src="script.js"></script>
+    <!-- JavaScript with mathematical formula -->
+    <!-- I tried to keep it with the theme -->
+    <script>
+      let numberOfStitches = 20;
+      let numberStitchesPerInch = numberOfStitches/4;
+
+      document.write("<h2>Gauge Swatch</h2>");
+      document.write("<br>");
+      document.write("If you have a gauge swatch of 4 inches by 4 inches.");
+      document.write("<br>");
+      document.write(`And number of stitches is ${numberOfStitches}.`);
+      document.write("<br>");
+      document.write("To find the stitches per inch:");
+      document.write("<br>");
+      document.write(`You simply divide number of stitches ${numberOfStitches} by the size of your swatch in inches.`);
+      document.write("<br>");
+      document.write(`So number of stitches per inch is ${numberStitchesPerInch}.`);
+    </script>
+    <!-- Footer with Inline CSS -->
     <footer>
       <p
         style="
           text-align: center;
           background-color: rgb(13, 110, 5);
           color: white;
-        "
-      >
+        ">
         Created at CodeX &copy;
       </p>
     </footer>
