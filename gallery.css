@@ -1,3 +1,4 @@
+
 html {
     height: 100%;
     width: 100%;
@@ -5,6 +6,7 @@ html {
 body {
     color: rgb(13, 110, 5);
     background-color: beige;
+    font-family:
 }
 main {
     border: solid 2px;
@@ -15,7 +17,8 @@ footer {
     text-align: center;
     font-size: x-small;
 }
-nav {
+/* Old Navbar */
+/* nav {
       display: flex;
       justify-content: space-around;
 } 
@@ -37,22 +40,52 @@ nav a:hover {
 nav a.active {
       background-color: rgb(25, 78, 22);
       color: rgb(85, 217, 85);
+} */
+
+ /* New Navbar */
+nav {
+  overflow: hidden;
+  background-color: rgb(13, 110, 5);
+}
+nav a {
+  float: left;
+  color: beige;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+nav a:hover {
+  background-color: green;
+  color: beige;
+}
+nav a.active {
+  background-color: rgb(123, 206, 28);
+  color: beige;
+}
+
+/* Gallery layout */
+.gallery-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 div.gallery {
 	margin: 5px;
-	border: 1px solid #ccc;
-	display: inline-block;
+	border: 3px solid rgb(13, 110, 5);;
+	/* display: inline-block; */
 	width: 180px;
 }
 div.gallery:hover {
-	border: 1px solid #777;
+	border: 3px solid rgb(123, 206, 28);
 }
 div.gallery img {
 	width: 100%;
-	height: auto;
+	height: 180px;
 	
 }
 div.descrip {
 	padding: 15px;
 	text-align: center;
+  /* height: auto; */
 }
