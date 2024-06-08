@@ -7,6 +7,8 @@ body {
   background-color: beige;
 }
 main {
+  /* Make elements in main stay in main without overlapping */
+  overflow: auto;
   border: solid 2px;
   padding: 10px;
   margin-top: 10px;
@@ -15,7 +17,9 @@ footer {
   text-align: center;
   font-size: x-small;
 }
-nav {
+
+/* OLD Navbar */
+/* nav {
 	display: flex;
 	justify-content: space-around;
 } 
@@ -38,12 +42,106 @@ nav a:hover {
 nav a.active {
 	background-color: rgb(25, 78, 22);
 	color: rgb(85, 217, 85);
+} */
+
+/* NEW Navbar */
+nav {
+  overflow: hidden;
+  background-color: rgb(13, 110, 5);
 }
+nav a {
+  float: left;
+  color: beige;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+nav a:hover {
+  background-color: green;
+  color: beige;
+}
+nav a.active {
+  background-color: rgb(123, 206, 28);
+  color: beige;
+}
+
+/* Styling main images with a border and centered */
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: solid 8px;
+  
 }
+/* Getting links to match list styles */
 .links {
+  /* background-color: rgb(123, 206, 28);  */
+  color: darkgreen;
+  text-decoration: none;
+}
+
+/* Styling my lists */
+h4 {
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: beige;
+}
+/* List one */
+ul  {
+  background-color: rgb(13, 110, 5);
+  padding: 20px;
+  list-style-type: none;
+}
+ul li {
+  background: beige;
+  margin: 20px;
+  padding: 8px;
+}
+/* Make logos not have the same rules as my other images */
+.logos {
+  border: none;
+}
+/* List Two */
+ol {
+  background-color: rgb(13, 110, 5);
+  padding: 60px; 
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+ol li {
   background-color: beige;
+  font-size: larger;
+  color: beige;
+}
+span {
+  color: rgb(13, 110, 5);
+}
+.list-container {
+  display: flex;
+  justify-content: space-between;
+}
+.list1 {
+  width: 400px;
+}
+.list2 {
+  height: 400px;
+  width: 400px;
+}
+
+/* Styling my table */
+h2 {
+  text-align: center;
+}
+table, tr, th, td {
+  
+  border: solid 2px darkgreen;
+  padding: 4px;
+  
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
 }
