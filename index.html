@@ -10,6 +10,31 @@
       body {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
+      .newsLetter-container {
+        position: relative;
+        background-image: url("img/newsLetterBg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 400px;
+        border: 2px solid green;
+        border-radius: 80px;
+      }
+      
+      .form-container {
+        position: absolute;
+        top: 10%;
+        /* bottom: 5%; */
+        right: 5%;
+        left: 10%;
+        background-color: rgba(red, green, blue, 0.2);
+        color: beige;
+        
+        height: 400px;
+      }
+
+      
     </style>
   </head>
 
@@ -34,6 +59,28 @@
         whole family.
       </p>
     </main>
+
+    <div class="newsLetter-container">
+      <div class="form-container">
+        <form>
+          <h3>Sign Up for our Newsletter</h3>
+          
+          <label>First Name:</label>
+          <br>
+          <input type="text" placeholder="First Name" name="firstName">
+          <br><br>
+          <label>Last Name:</label>
+          <br>
+          <input type="text" placeholder="Last Name" name="lastName">
+          <br><br>
+          <label>Email: </label>
+          <br>
+          <input type="text" placeholder="Email" name="email">
+          <br><br>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
 
     <script src="script.js"></script>
     <footer>
