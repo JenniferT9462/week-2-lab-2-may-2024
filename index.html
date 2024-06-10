@@ -10,6 +10,7 @@
       body {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
+      
       /* Positioning my form with a bg image */
       /* I am still not satisfied with the position */
       .newsLetter-container {
@@ -34,77 +35,100 @@
         color: beige;
         height: 400px;
       }
+      /*#footer-container {
+        position: relative;
+        height: 1em;
+        width: 100%
+      }
+      #footer {
+        position: absolute;
+        bottom: 0px;
+        width: 100% 
+      } */
+      #footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: darkgreen;
+        color: white;
+        text-align: center;
+      }
+      
+      
+      
     </style>
   </head>
 
   <body>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">About</a>
-      <a href="schedule.html">Schedule</a>
-    </nav>
-    <br>
-
-    <h1 style="text-align: center">Knitting!!!</h1>
-
-    <img src="img/knitting2.jpg" height="360" width="720" />
-
-    <main>
-      <h2>Why I love to Knit</h2>
-      <p>
-        Knitting is a great hobby. It can allow you to have a creative outlet,
-        it's very relaxing and you can make some very useful items for your
-        whole family.
-      </p>
-    </main>
-    <br>
-    <!-- Put my form in a divs to position the form over the bg image -->
-    <div class="newsLetter-container">
-      <div class="form-container">
-        <form>
-          <h3>Sign Up for our Newsletter</h3>
-          
-          <label>First Name:</label>
-          <br>
-          <input type="text" placeholder="First Name" name="firstName">
-          <br><br>
-          <label>Last Name:</label>
-          <br>
-          <input type="text" placeholder="Last Name" name="lastName">
-          <br><br>
-          <label>Email: </label>
-          <br>
-          <input type="text" placeholder="Email" name="email">
-          <br><br>
-          <input type="submit">
-        </form>
-      </div>
-    </div>
-    <br>
-
-
-
-
-
-
-
-
     
+        <nav>
+          <a href="index.html" class="active">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="schedule.html">Schedule</a>
+        </nav>
+        <br>
 
-    <script src="script.js"></script>
-    <!-- Footer with Inline CSS -->
-    <!-- Footer isn't staying at the bottom, just for the home page-->
-    <!-- I am assuming it is because of the positioning I have with my form -->
-    <footer>
-      <p
-        style="
-          text-align: center;
-          background-color: rgb(13, 110, 5);
-          color: white;
-        ">
-        Created at CodeX &copy;
-      </p>
-    </footer>
+        <h1 style="text-align: center">Knitting!!!</h1>
+
+        <img src="img/knitting2.jpg" height="360" width="720" />
+
+        <main>
+          <h2>Why I love to Knit</h2>
+          <p>
+            Knitting is a great hobby. It can allow you to have a creative outlet,
+            it's very relaxing and you can make some very useful items for your
+            whole family.
+          </p>
+        </main>
+        <br>
+        <!-- Put my form in a divs to position the form over the bg image -->
+        <div class="newsLetter-container">
+          <div class="form-container">
+            <form>
+              <h3>Sign Up for our Newsletter</h3>
+              
+              <label>First Name:</label>
+              <br>
+              <input type="text" placeholder="First Name" name="firstName">
+              <br><br>
+              <label>Last Name:</label>
+              <br>
+              <input type="text" placeholder="Last Name" name="lastName">
+              <br><br>
+              <label>Email: </label>
+              <br>
+              <input type="text" placeholder="Email" name="email">
+              <br><br>
+              <input type="submit">
+            </form>
+          </div>
+        </div>
+        <br>
+
+
+
+
+
+
+
+
+        
+
+        <script src="script.js"></script>
+        <!-- Footer with Inline CSS -->
+        <!-- Footer isn't staying at the bottom, just for the home page-->
+        <!-- I am assuming it is because of the positioning I have with my form -->
+        <!-- I had to set the footer to fixed to get rid of the space, still not what I want -->
+        <footer id="footer"
+              style="
+              text-align: center;
+              background-color: rgb(13, 110, 5);
+              color: white;" 
+              >
+            Created at CodeX &copy;
+        </footer>
+    
   </body>
 </html>
