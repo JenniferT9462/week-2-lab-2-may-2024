@@ -68,6 +68,10 @@ nav a.active {
 }
 
 /* Styling main images with a border and centered */
+.mainImage {
+  height: 360px;
+  width: 700px;
+}
 img {
   display: block;
   margin-left: auto;
