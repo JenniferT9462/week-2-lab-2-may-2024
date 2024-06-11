@@ -6,7 +6,6 @@ html {
 body {
     color: rgb(13, 110, 5);
     background-color: beige;
-    font-family:
 }
 main {
     border: solid 2px;
@@ -17,6 +16,7 @@ footer {
     text-align: center;
     font-size: x-small;
 }
+
 /* Old Navbar */
 /* nav {
       display: flex;
